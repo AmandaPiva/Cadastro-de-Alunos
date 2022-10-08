@@ -1,1 +1,11 @@
-<h2>{{student}}</h2>
+<h2>{{student.name}} Detalhes</h2>
+<div><span>RA: </span>{{student.id}}</div>
+<div><span>Nome: </span>{{student.name}}</div>
+<div><span>Data de Nascimento: {{student.data | date: 'shortDate'}}</span></div>
+
+<div><span>Série: </span>{{student.serie}}</div>
+
+<div>
+    <label for="name">Nome do estudante: </label>
+    <input id="name" [(ngModel)]="student.name" placeholder="name">
+</div>
