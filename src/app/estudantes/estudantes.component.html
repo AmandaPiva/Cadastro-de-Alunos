@@ -1,9 +1,14 @@
-<h2>{{student.name}} Detalhes</h2>
-<div><span>RA: </span>{{student.id}}</div>
-<div><span>Nome: </span>{{student.name}}</div>
-<div><span>Data de Nascimento: {{student.data | date: 'shortDate'}}</span></div>
-
-<div><span>Série: </span>{{student.serie}}</div>
+<h2>Estudantes</h2>
+<table class="students">
+  <tr>
+    <button type="button">
+      <td class="id">RA: {{student.id}}, </td>
+      <td class="name">Nome: {{student.name}} </td>
+      <td class="data">Data de Nascimento: {{student.data}} </td>
+      <td class="serie">Série: {{student.serie}}</td>
+    </button>
+</tr>
+</table>
 
 <div>
     <label for="name">Nome do estudante: </label>

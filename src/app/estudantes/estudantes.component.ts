@@ -9,7 +9,15 @@ import { STUDENT } from '../mock-studant';
 })
 export class EstudantesComponent implements OnInit {
 
-  student = STUDENT;
+  student: student = {
+    id: 5124,
+    name: 'Ana Carolina Machado',
+    data: 22032006,
+    serie: 'Segundo ano do ensino médio'
+  };
+
+  students = STUDENT;
+
 
   constructor() { }
 
