@@ -1,0 +1,12 @@
+table{
+    border: solid;
+    border-color: #00437B;
+    background: #00437B;
+}
+
+table td{
+    border-left: solid;
+    padding: 8px;
+    margin: auto;
+}
+
