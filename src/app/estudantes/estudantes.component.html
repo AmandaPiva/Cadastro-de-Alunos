@@ -1,12 +1,12 @@
 <h2>Estudantes</h2>
 <table class="students">
-  <tr>
-    <button type="button">
+  <tr *ngFor="let list of students">
+    <button type="button" (click)="onSelect(student))">
       <td class="id">RA: {{student.id}}, </td>
       <td class="name">Nome: {{student.name}} </td>
       <td class="data">Data de Nascimento: {{student.data}} </td>
       <td class="serie">Série: {{student.serie}}</td>
-    </button>
+    </button>    
 </tr>
 </table>
 

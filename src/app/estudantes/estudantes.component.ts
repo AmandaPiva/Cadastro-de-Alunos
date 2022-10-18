@@ -9,7 +9,12 @@ import { STUDENT } from '../mock-studant';
 })
 export class EstudantesComponent implements OnInit {
 
-  student: student = {
+  selectedStud?: student;
+  onSelect(student: student): void {
+    this.selectedStud = student;
+  }
+
+ student: student = {
     id: 5124,
     name: 'Ana Carolina Machado',
     data: 22032006,
