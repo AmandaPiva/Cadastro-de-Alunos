@@ -10,8 +10,8 @@ import { STUDENT } from '../mock-studant';
 export class EstudantesComponent implements OnInit {
 
   selectedStud?: student;
-  onSelect(student: student): void {
-    this.selectedStud = student;
+  onSelect(Parastud: student): void {
+    this.selectedStud = Parastud;
   }
 
  student: student = {

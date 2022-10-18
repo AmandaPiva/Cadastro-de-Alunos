@@ -1,12 +1,43 @@
 table{
     border: solid;
     border-color: #00437B;
+    border-radius: 5px;
+
     background: #00437B;
+    padding: 2em;
 }
 
 table td{
     border-left: solid;
     padding: 8px;
-    margin: auto;
+    width: 150px;
 }
 
+.inputs{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs input{
+    width: 400px;
+    height: 40px;
+
+    border-style: solid;
+    border-color: #3471B2;
+    border-radius: 5px;
+
+    padding-left: 5px;
+
+    color: #00437B;
+}
+
+button:hover{
+    background-color: #505050;
+    color: white;
+}
+
+button.selected {
+    background-color: #505050;
+    color: white;
+}

@@ -1,16 +1,27 @@
 <h2>Estudantes</h2>
+
 <table class="students">
-  <tr *ngFor="let list of students">
-    <button type="button" (click)="onSelect(student))">
-      <td class="id">RA: {{student.id}}, </td>
-      <td class="name">Nome: {{student.name}} </td>
-      <td class="data">Data de Nascimento: {{student.data}} </td>
-      <td class="serie">Série: {{student.serie}}</td>
+  <tr *ngFor="let studList of students">
+    <button type="button" (click)="onSelect(studList)" [class.selected]="studList === selectedStud">
+      <td class="id">RA: {{studList.id}}, </td>
+      <td class="name">Nome: {{studList.name}} </td>
+      <td class="data">Data de Nascimento: {{studList.data}} </td>
+      <td class="serie">Série: {{studList.serie}}</td>
     </button>    
 </tr>
 </table>
 
-<div>
-    <label for="name">Nome do estudante: </label>
+<div class="inputs">
+    <label for="name">Nome: </label>
     <input id="name" [(ngModel)]="student.name" placeholder="name">
+
+    <label for="id">RA: </label>
+    <input id="id" [(ngModel)]="student.id" placeholder="id">
+
+    <label for="data">Data de Nascimento: </label>
+    <input id="data" [(ngModel)]="student.data" placeholder="data">
+
+    <label for="serie">Série: </label>
+    <input id="serie" [(ngModel)]="student.serie" placeholder="serie">
 </div>
+
