@@ -11,17 +11,18 @@
 </tr>
 </table>
 
-<div class="inputs">
-    <label for="name">Nome: </label>
-    <input id="name" [(ngModel)]="student.name" placeholder="name">
+<div *ngIf = "selectedStud">
+  <div class="inputs">
+      <label for="name">Nome: </label>
+      <input id="name" [(ngModel)]="selectedStud.name" placeholder="name">
 
-    <label for="id">RA: </label>
-    <input id="id" [(ngModel)]="student.id" placeholder="id">
+      <label for="id">RA: </label>
+      <input id="id" [(ngModel)]="selectedStud.id" placeholder="id">
 
-    <label for="data">Data de Nascimento: </label>
-    <input id="data" [(ngModel)]="student.data" placeholder="data">
+      <label for="data">Data de Nascimento: </label>
+      <input id="data" [(ngModel)]="selectedStud.data" placeholder="data">
 
-    <label for="serie">Série: </label>
-    <input id="serie" [(ngModel)]="student.serie" placeholder="serie">
+      <label for="serie">Série: </label>
+      <input id="serie" [(ngModel)]="selectedStud.serie" placeholder="serie">
+  </div>
 </div>
-
